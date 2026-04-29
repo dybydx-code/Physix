@@ -13,6 +13,9 @@ A simple and interactive physics calculator built with HTML, CSS, and JavaScript
 - s = ut + ½at²
 - F = ma
 
+## 🌍 Live Demo
+https://dybydx-code.github.io/Physix
+
 ## 🛠️ Built With
 - HTML
 - CSS
