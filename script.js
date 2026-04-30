@@ -30,7 +30,7 @@ const formulas = {
   "a = (v - u) / t":{
     inputs: ["v", "u", "t"],
     units: ["m/s", "m/s","s"],
-    calculate: (v, u, t) => (v-u)*t,
+    calculate: (v, u, t) => (v-u)/t,
     output: "a",
     outputUnit: "m/s²"
   },
@@ -118,7 +118,7 @@ const formulas = {
   "F = KQq/r²": {
     inputs: ["Q", "q", "r"],
     units: ["C", "C", "m"],
-    calculate: (Q, q, r) => (9*(10**9)*Q*q)/r*r,
+    calculate: (Q, q, r) => (9*(10**9)*Q*q)/(r*r),
     output: "F",
     outputUnit: "N",
   },
@@ -169,7 +169,6 @@ buttons.forEach(button => {
   button.addEventListener("click", () => {
     const formula = button.textContent;
     const data = formulas[formula];
-
     if (!data) return;
 
     display.textContent = formula;
